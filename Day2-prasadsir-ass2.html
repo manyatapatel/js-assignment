@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+</head>
+<body>
+    <!--q2)Write a remaining methods of strings and arrays with examples -->
+    <script>
+    // methods of Strings:
+    let str = 'Hello'
+    //1.charAt():
+    console.log(str.charAt(2)) //Returns the character at the specified index (position)
+    //2.charCodeAt():
+    console.log(str.charCodeAt(2)) //Returns the Unicode of the character at the specified index
+    //3.concat():
+    console.log(str.concat('everyone')) //Joins two or more strings, and returns a new joined strings
+    //4.endsWith():
+    console.log(str.endsWith('o')) //Checks whether a string ends with specified string/characters
+    //5.includes():
+    console.log(str.includes('f')) //Checks whether a string contains the specified string/characters
+    //6.indexOf():
+    console.log(str.indexOf(
+        'h')) //Returns the position of the first found occurrence of a specified value in a string
+    //7.lastIndexOf():
+    console.log(str.lastIndexOf(
+        'l')) //Returns the position of the last found occurrence of a specified value in a string
+    //8.localeCompare():
+    console.log(str.localeCompare('hai')) //Compares two strings in the current locale
+    //9.match():
+    console.log(str.match()) //Searches a string for a match against a regular expression, and returns the matches
+    //10.repeat():
+    console.log(str.repeat(2)) //Returns a new string with a specified number of copies of an existing string
+    //11.replace():
+    console.log(str.replace('l',
+        '0'
+    )) //Searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced
+    //12.search():
+    console.log(str.search(
+        'h'
+    )) //	Searches a string for a specified value, or regular expression, and returns the position of the match
+    //13.slice():
+    console.log(str.slice(0, 3)) //Extracts a part of a string and returns a new string
+    //14.split():
+    console.log(str.split()) //Splits a string into an array of substrings
+    //15.startsWith():
+    console.log(str.startsWith('h')) //Checks whether a string begins with specified characters
+    //16.substr():
+    console.log(str.substr(1,
+        4
+    )) //Extracts the characters from a string, beginning at a specified start position, and through the specified number of character
+    //17.substring():
+    console.log(str.substring(1, 4)) //Extracts the characters from a string, between two specified indices
+    //18.toLocaleLowerCase():
+    console.log(str.toLocaleLowerCase()) //Converts a string to lowercase letters, according to the host's locale
+    //19.toLocaleUpperCase():
+    console.log(str.toLocaleUpperCase()) //Converts a string to uppercase letters, according to the host's locale
+    //20.toLowerCase():
+    console.log(str.toLowerCase()) //Converts a string to lowercase letters
+    //21.toUpperCase():
+    console.log(str.toUpperCase()) //Converts a string to uppercase letters
+    //22.trim():
+    console.log(' hey '.trim()) //	Removes whitespace from both ends of a string
+    //23.valueOf():
+    console.log(str.valueOf()) //Returns the primitive value of a String object
+    </script>
+</body>
+</html>
