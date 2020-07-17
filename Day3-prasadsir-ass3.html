@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+</head>
+<body>
+    <script>
+        let marks = prompt("Enter your marks.");
+        /*using nested if-else*/
+        let grade;
+        if(+marks > 90){
+            grade = "A++";
+        }else if(+marks > 80){
+            grade = "A+";
+        }else if(+marks > 70){
+            grade = "A";
+        }else if(+marks > 60){
+            grade = "B++";
+        }else if (+marks > 50){
+            grade = "B+";
+        }else if(+marks > 40){
+            grade = "B";
+        }else if(+marks > 0){
+            grade = "FAIL";
+        }else{
+            grade = "The marks is incorrect";
+        }
+        console.log(`Marks  are ${marks} and grade is ${grade}.`);
+        /*Using ternary operator.*/
+        grade = (+marks > 80) ? "A++" : (+marks>70) ? "A+" : (+marks>60) ? "B++" : (+marks>50) ? "B+" : (+marks>40) ? "B" : "FAIL";
+        console.log(`Marks are ${marks} and grade is ${grade}.`);
+
+
+        /*Using Switch Case*/
+        switch(true){
+             case (+marks > 80):
+                  grade = "A+";
+                   break;
+             case(+marks > 70):
+                  grade = "A";
+                   break;
+             case(+marks > 60):
+                  grade = "B++";
+                   break;
+             case(+marks > 50):
+                  grade = "B+";
+                   break;
+             case(+marks > 40):
+                  grade = "B";
+                   break;
+             case(+marks > 0):
+                  grade = "FAIL";
+                   break;
+             default:
+                 grade = "Incorrect value."
+        }
+        console.log(`Marks are ${marks} and grade is ${grade}.`);
+    </script>
+</body>
+</html>
