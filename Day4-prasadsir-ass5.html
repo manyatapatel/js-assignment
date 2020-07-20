@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sales</title>
+</head>
+<body>
+    <h2>sales criteria</h2>
+    <script>
+        let sales = +prompt("enter amount of sales made by you during whole year");
+        if(sales>=0 && sales<=5000)
+        {
+            rewards=(sales*2)/100;
+            console.log("commision"+rewards);
+        }
+        else if(sales>=5001 && sales<=10000)
+        {
+            rewards=(sales*5)/100;
+            console.log("commision"+rewards);
+        }
+        else if(sales>=10001 && sales<=20000)
+        {
+            rewards=(sales*7)/100;
+            console.log("commision"+rewards);
+        }
+        else
+        {
+            rewards=(sales*10)/100;
+            console.log("commision"+rewards);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+</head>
+<body>
+    <h1>for loop that iterates up to 100 while outputting "fizz" at multiple times of 3, "buzz" at 5 and "fizzbuzz" at 3 and 5</h1>
+    <script>
+        for(let i=1;i<=100;i++)
+        {
+            if(i%3==0 && i%5==0)
+            {
+                console.log("fizzbuzz" +i);
+            }
+            else if(i%3==0)
+            {
+                console.log("fizz" +i);
+            }
+            else if(i%5==0)
+            {
+                console.log("buzz" +i);
+            }
+            else{
+                console.log(i);
+            }
+            }
+            </script>
+</body>
+</html>

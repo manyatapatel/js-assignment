@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime</title>
+</head>
+<body>
+    <h2>prime</h2>
+    <script>
+        let num = +prompt("enter number");
+        for (var j = 2; j<=num; j++){
+            var notprime = false;
+            for(var i = 2;i<=j;j++){
+                if(j%i==0 && i!==j){
+                    notprime = true;
+                }
+                }
+                if(notprime===false){
+                    console.log(j);
+                }
+        }
+    </script>
+</body>
+</html>

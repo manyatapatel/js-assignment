@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+</head>
+<body>
+    <h2>calc</h2>
+    Enter 1 for addition.
+    Enter 2 for subtraction.
+    3 for multiplication.4 for div.5 for sqrt.6 for percentage.
+    <script>
+        let val = prompt("enter two values and operation u want to perform");
+        let ar = val.split(" ");
+        let a = +ar[0];
+        let b = +ar[1];
+        let choice = +ar[2];
+        if(choice==1)
+        {
+            console.log("Addition is:"+ a+b);
+        }
+        else if(choice==2)
+        {
+            console.log("Sub. is:" +a-b);
+        }
+        else if(choice==3)
+        {
+            console.log("Mul. is:" +a*b);
+        }
+        else if(choice==4)
+        {
+            console.log("Div. is:" +a/b);
+        }
+        else if(choice==5)
+        {
+            console.log("sqrt is:" +Math.sqrt[a]);
+            console.log(Math.sqrt[b]);
+        }
+        else if(choice=6)
+        {
+            console.log("percentage is:" +(100*b)/a);
+        }
+    </script>    
+</body>
+</html>
