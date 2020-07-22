@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<style>
+    body {
+      padding: 25px;
+      background-color: white;
+      color: black;
+      font-size: 25px;
+    }
+    
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+    </style>
+<body>
+    
+    <h2>Toggle Dark/Light Mode</h2>
+    <p>Click the button to toggle between dark and light mode for this page.</p>
+    
+    <button onclick="myFunction()">Dark mode</button>
+ 
+    
+    <script>
+        
+   var customerName = prompt("Please enter your name");
+   document.write(`<h1>Welcome ${customerName} </h1>`);
+   function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+function startTime() {
+    var d=new Date();
+    var h=d.getHours();
+    var m=d.getMinutes();
+    var s=d.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML = "Todays current time is: "+h+":"+m+":"+s;
+}
+
+function checkTime(i) {
+    var j = i;
+    if (i < 10) {
+        j = "0" + i;
+    }
+    return j;
+}
+
+setInterval(function() {
+    startTime();
+}, 500);
+
+</script>
+<p id="txt"></p>
+</body>
+</html> 

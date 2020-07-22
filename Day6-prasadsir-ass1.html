@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+</head>
+<script type="text/javascript">
+    var m  = ["blue","black","purple"];
+    var currentColorIndex = 0;
+    function changeColor() {
+        document.bgColor = m[currentColorIndex];
+        currentColorIndex = (currentColorIndex + 1)% m.length;
+        setTimeout(changeColor,5000);
+        }
+
+</script>
+<body onload="changeColor()">
+</body>
+</html>
