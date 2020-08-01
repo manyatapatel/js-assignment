@@ -1,0 +1,33 @@
+
+
+.container{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+
+#display{
+    width: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+    .buttons{
+    text-align: center;
+    font-size: 4vm;
+    margin: 0 0.2em;
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: cadetblue;
+}
+.buttons:first-child{
+    margin-left: 0;
+}
+.buttons:last-child{
+    margin-right: 0;
+}
+.buttons:hover{
+    color: white;
+}
